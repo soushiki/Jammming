@@ -1,6 +1,6 @@
 import {Buffer} from 'buffer';
 const clientId = 'c65340153118417ebb7f66877ea75177';
-const client_secret = 'ad24623716ef4bc8ba631d35f646d727'; // Insert client ID here.
+const client_secret = process.env.CLIENT_SECRET; // Insert client ID here.
 const redirectUri = 'http://127.0.0.1:5174'; // Have to add this to your accepted Spotify redirect URIs on the Spotify API.
 const TOKEN = 'https://accounts.spotify.com/api/token';
 let accessToken;
