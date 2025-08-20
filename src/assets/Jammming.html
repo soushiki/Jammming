@@ -1,6 +1,18 @@
-:root {
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://localhost:5173/? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
 
-  box-sizing: border-box;
+    <script type="module" src="./Jammming_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jammming</title>
+  <style type="text/css" data-vite-dev-id="D:/coding-knowledge/coding-fundamentals/frontend/codeCademy/kanban project/Jammming/src/index.css">:root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -15,7 +27,7 @@
 }
 /*app*/
 #root {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -53,8 +65,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  width: 100%;
-  
+  padding: 0 5em;
 
 }
 #root header h1 {
@@ -79,33 +90,14 @@ body {
 
 #root header span {
   color: #fff;
-  top: 10px;
-  left: 0;
-  position: relative;
-  text-shadow:  
-    /*vertically above*/
-    -2px -1px  #fff,
-    0 -1px  #fff,
-    2px -1px  #fff,
-    /*onset same level as letters*/
-    -2px 0  #fff,
-    2px 0  #fff,
-    /*under the letter*/
-    -2px 1px #fff,
-    0 1px 1px #fff,
-    2px 1px  #fff ;
+  
 }
 
 #root main{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: space-around;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  padding-top: 5em;
-  gap: 3em;
-
-  
 }
 
 button {
@@ -134,149 +126,33 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #181818;
-  border: 1px solid black;
-  max-height: 300px;
-  height: 100%;
-  min-height: 300px;
-  min-width: 400px;
-  width: 40%;
-  padding: 1em;
-  
-  
-}
-
-.search-results-container h2 {
-  text-align: center;
-}
-
-.tracklist {
-  display: flex;
-  flex-direction: column;
+  min-width: 100vh;
   width: 100%;
-  
-  gap: 0.75rem;
-  overflow-y: auto;
-  
-}
-.song-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  min-width: 50%;
-  width: 92%;
-  height: 100%;
-  padding: 0.5em 1em;
-  border-radius: 10px;
-  
-}
-
-.song-container button{
-  height: 20%;
- 
 }
 
 
 /*searchbar*/
 .searchbar{
   margin: 3em;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
   'searchbar searchbar button';
-  grid-column:  3 / 6;
+  grid-column: 3 / span 6;
 
 }
 
 .searchbar input{
   grid-area: searchbar;
   text-align: center;
-  min-width: 3em;
-
- 
+  
 }
 
 .searchbar button{
   grid-area: button;
   margin-left: 1em;
-  min-width: 2em;
-  border: 1px solid #424549;
- 
 }
-
-.searchbar button:hover{
-   background-color: #424549;
- 
-}
-
-.playlist {
-  display: flex;
-   flex-direction: column;
-   align-items: center;
-   background-color: #181818;
-   border: 1px solid black;
-   height: 100%;
-   min-height: 300px;
-   max-height: 300px;
-   min-width: 400px;
-   padding:1em;
-   width: 40%;
-   gap: 2em;
- 
- 
-}
-
-.track{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  min-height: 80%;
-}
-
-.playlist-title{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 60%;
-  height: 1em;
-}
-
-.playlist-title input{
-  border:none;
-  background-color: unset;
-  font-size: 1.5em;
-  text-align: center;
-  max-width: 60%;
-}
-
-.playlist-title h2{
-  
-  padding: 0 1em;
-  font-size: 1.5em;
-  text-align: center;
-  max-width: 100%;
-}
-
-.playlist-title button {
-  max-height: 40px;
-}
-
-.playlist-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 10%;
-  margin: 0;
-}
-
-
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -290,3 +166,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+</style></head>
+  <body>
+    <div id="root"><header><h1>JAM<span>MM</span>ING</h1><form class="searchbar"><input placeholder="“Cbat,” by Hudson Mohawke" type="text"><button type="submit">Go for it</button></form></header><main><div></div></main></div>
+    <script type="module" src="./Jammming_files/main.jsx"></script>
+  
+
+</body></html>
